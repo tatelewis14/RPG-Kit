@@ -1,10 +1,10 @@
 export class Resources {
     constructor() {
         this.toLoad = {
-            sky: "rpg-kit/public/sprites/._sky.png",
-            ground: "rpg-kit/public/sprites/._ground.png",
-            shadow: "rpg-kit/public/sprites/._shadow.png",
-            hero: "rpg-kit/public/sprites/._spritesheet.png"
+            sky: "rpg-kit/public/sprites/sky.png",
+            ground: "rpg-kit/public/sprites/ground.png",
+            shadow: "rpg-kit/public/sprites/shadow.png",
+            hero: "rpg-kit/public/sprites/spritesheet.png"
         };
 
         this.images= []//holds all loaded images
@@ -18,7 +18,7 @@ export class Resources {
 
             }
 
-            img.onload = () =>{
+            img.onload = () => {
                 this.images[key].isLoaded = true;
             }
     })

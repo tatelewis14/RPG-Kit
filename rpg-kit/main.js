@@ -17,6 +17,6 @@ function draw()  {
   if(sky.isLoaded) {
     ctx.drawImage(sky.image, 0,0)
   } else {
-    console.log(sky.image)
+    console.log(sky.isLoaded)
   }
 }
